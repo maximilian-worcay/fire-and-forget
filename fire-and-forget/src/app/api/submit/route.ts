@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 export async function POST(request: NextRequest) {
     const data = await request.json()
     const url = `${getUrl()}/api/job`
+    console.log("Sending data to job route")
     fetch(url, {
         method: 'POST',
         headers: {
