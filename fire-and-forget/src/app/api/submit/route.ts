@@ -4,7 +4,7 @@ export async function POST(request: NextRequest) {
     const data = await request.json()
     const url = `${getUrl()}/api/job`
     console.log("Sending data to job route: ", url)
-    await fetch(url, {
+    fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
