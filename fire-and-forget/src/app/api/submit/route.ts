@@ -25,6 +25,7 @@ function getUrl(): string {
     if (envVar.includes("localhost")) {
         return `http://${envVar}`
     } else {
-        return `https://${envVar}`
+        //return `https://${envVar}`
+        return "https://fire-and-forget.vercel.app"
     }
 }
